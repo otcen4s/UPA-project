@@ -12,9 +12,9 @@ TODO: project description
 ```docker-compose build```
 
 ## Run services
-Firstly is necessary to run services for creating database and DB user:
+Firstly is necessary to run service for initialization of influx db (username, password, ...):
 
-```docker-compose up influxdb influxdb_cli```
+```docker-compose up influxdb```
 
 Then is necessary to run service for filling the database:
 
