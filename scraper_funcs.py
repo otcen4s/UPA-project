@@ -59,10 +59,5 @@ def prepare_csv_data_for_db(measurement, data):
     return data_for_db
 
 
-# TODO: parse xml data and prepare for saving to db
-def prepare_xml_data_for_db(measurement, data):
-    pass
-
-
 def save_data_to_db(client, data):
     client.write_points(data)
