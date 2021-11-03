@@ -11,18 +11,12 @@ services:
       - "8086:8086"
     volumes:
       - /opt/appdata/influxdb:/var/lib/influxdb
+    # setup credentials for user
+    environment:
+      INFLUXDB_HOSTNAME: "http://influxdb:8086"
+      INFLUXDB_USERNAME: "upa21"
+      INFLUXDB_PASSWORD: "upa21"
     restart: always
-
-  # create user
-  # -----------
-  influxdb_cli:
-    links:
-      - influxdb
-    image: influxdb:1.8.0
-    container_name: influx_db_cli
-    entrypoint: influx setup --username=admin --password=admin --host=http://influxdb:8086 -f
-    depends_on:
-      - influxdb
 
   # UPA 1st task
   # ------------
@@ -30,14 +24,11 @@ services:
     build: .  # build Dockerfile
     container_name: scraper
     command: ["python", "scraper.py"] # execute this command
-    links:
-      - influxdb
     environment:
       - INFLUX_HOST=influxdb
       - INFLUX_PORT=8086
-      - INFLUX_LOGIN=admin
-      - INFLUX_PASSWORD=admin
-
+      - INFLUX_LOGIN=upa21
+      - INFLUX_PASSWORD=upa21
 
 #  # UPA 2nd task
 #  # ------------
