@@ -9,8 +9,8 @@ services:
     container_name: influxdb
     ports:
       - "8086:8086"
-    volumes:
-      - /opt/appdata/influxdb:/var/lib/influxdb
+    #volumes:
+      #- /opt/appdata/influxdb:/var/lib/influxdb
     # setup credentials for user
     environment:
       INFLUXDB_HOSTNAME: "http://influxdb:8086"
@@ -34,8 +34,13 @@ services:
 
 #  # UPA 2nd task
 #  # ------------
-#  visualizer:
-#    extends:
-#      service: base
-#
-#    container_name: visualizer
+
+  visualizer:
+    build: .  # build Dockerfile
+    container_name: visualizer
+    command: ["python", "visualizer.py"] # execute this command
+    environment:
+      INFLUX_HOST: "influxdb"
+      INFLUX_PORT: "8086"
+      INFLUX_LOGIN: "upa21"
+      INFLUX_PASSWORD: "upa21"
