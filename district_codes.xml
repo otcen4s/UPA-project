@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<EXPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://apl.czso.cz/iSMS/xsd/isms_vazby.xsd">
+<INFO>
+  <TYPEXP kod="3">Vazba číselník - číselník</TYPEXP>
+  <VERZEEXP>1.0</VERZEEXP>
+  <ZDROJEXP>iSMS 1.2.8</ZDROJEXP>
+  <DATEXP>2021-12-13</DATEXP>
+  <DATPOHL>2021-12-13</DATPOHL>
+  <KODJAZ>CS</KODJAZ>
+  <OBSAH>
+    <VAZBA ref="1">
+      <TYPCIS kod="C">Číselník</TYPCIS>
+      <AKRCIS>OKRES_LAU</AKRCIS>
+      <KODCIS>109</KODCIS>
+      <NAZEV>Číselník okresů</NAZEV>
+    </VAZBA>
+    <VAZBA ref="2">
+      <TYPCIS kod="C">Číselník</TYPCIS>
+      <AKRCIS>OKRES_NUTS</AKRCIS>
+      <KODCIS>101</KODCIS>
+      <NAZEV>Okres</NAZEV>
+    </VAZBA>
+  </OBSAH>
+</INFO>
+<DATA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0100</CHODNOTA>
+    <TEXT>Praha</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40924</CHODNOTA>
+    <TEXT>Praha</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0201</CHODNOTA>
+    <TEXT>Benešov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40169</CHODNOTA>
+    <TEXT>Benešov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0202</CHODNOTA>
+    <TEXT>Beroun</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40177</CHODNOTA>
+    <TEXT>Beroun</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0203</CHODNOTA>
+    <TEXT>Kladno</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40185</CHODNOTA>
+    <TEXT>Kladno</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0204</CHODNOTA>
+    <TEXT>Kolín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40193</CHODNOTA>
+    <TEXT>Kolín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0205</CHODNOTA>
+    <TEXT>Kutná Hora</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40207</CHODNOTA>
+    <TEXT>Kutná Hora</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0206</CHODNOTA>
+    <TEXT>Mělník</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40215</CHODNOTA>
+    <TEXT>Mělník</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0207</CHODNOTA>
+    <TEXT>Mladá Boleslav</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40223</CHODNOTA>
+    <TEXT>Mladá Boleslav</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0208</CHODNOTA>
+    <TEXT>Nymburk</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40231</CHODNOTA>
+    <TEXT>Nymburk</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0209</CHODNOTA>
+    <TEXT>Praha-východ</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40240</CHODNOTA>
+    <TEXT>Praha-východ</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ020A</CHODNOTA>
+    <TEXT>Praha-západ</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40258</CHODNOTA>
+    <TEXT>Praha-západ</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ020B</CHODNOTA>
+    <TEXT>Příbram</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40266</CHODNOTA>
+    <TEXT>Příbram</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ020C</CHODNOTA>
+    <TEXT>Rakovník</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40274</CHODNOTA>
+    <TEXT>Rakovník</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0311</CHODNOTA>
+    <TEXT>České Budějovice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40282</CHODNOTA>
+    <TEXT>České Budějovice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0312</CHODNOTA>
+    <TEXT>Český Krumlov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40291</CHODNOTA>
+    <TEXT>Český Krumlov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0313</CHODNOTA>
+    <TEXT>Jindřichův Hradec</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40304</CHODNOTA>
+    <TEXT>Jindřichův Hradec</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0314</CHODNOTA>
+    <TEXT>Písek</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40312</CHODNOTA>
+    <TEXT>Písek</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0315</CHODNOTA>
+    <TEXT>Prachatice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40321</CHODNOTA>
+    <TEXT>Prachatice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0316</CHODNOTA>
+    <TEXT>Strakonice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40339</CHODNOTA>
+    <TEXT>Strakonice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0317</CHODNOTA>
+    <TEXT>Tábor</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40347</CHODNOTA>
+    <TEXT>Tábor</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0321</CHODNOTA>
+    <TEXT>Domažlice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40355</CHODNOTA>
+    <TEXT>Domažlice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0322</CHODNOTA>
+    <TEXT>Klatovy</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40363</CHODNOTA>
+    <TEXT>Klatovy</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0323</CHODNOTA>
+    <TEXT>Plzeň-město</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40371</CHODNOTA>
+    <TEXT>Plzeň-město</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0324</CHODNOTA>
+    <TEXT>Plzeň-jih</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40380</CHODNOTA>
+    <TEXT>Plzeň-jih</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0325</CHODNOTA>
+    <TEXT>Plzeň-sever</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40398</CHODNOTA>
+    <TEXT>Plzeň-sever</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0326</CHODNOTA>
+    <TEXT>Rokycany</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40401</CHODNOTA>
+    <TEXT>Rokycany</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0327</CHODNOTA>
+    <TEXT>Tachov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40410</CHODNOTA>
+    <TEXT>Tachov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0411</CHODNOTA>
+    <TEXT>Cheb</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40428</CHODNOTA>
+    <TEXT>Cheb</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0412</CHODNOTA>
+    <TEXT>Karlovy Vary</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40436</CHODNOTA>
+    <TEXT>Karlovy Vary</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0413</CHODNOTA>
+    <TEXT>Sokolov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40444</CHODNOTA>
+    <TEXT>Sokolov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0421</CHODNOTA>
+    <TEXT>Děčín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40452</CHODNOTA>
+    <TEXT>Děčín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0422</CHODNOTA>
+    <TEXT>Chomutov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40461</CHODNOTA>
+    <TEXT>Chomutov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0423</CHODNOTA>
+    <TEXT>Litoměřice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40479</CHODNOTA>
+    <TEXT>Litoměřice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0424</CHODNOTA>
+    <TEXT>Louny</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40487</CHODNOTA>
+    <TEXT>Louny</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0425</CHODNOTA>
+    <TEXT>Most</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40495</CHODNOTA>
+    <TEXT>Most</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0426</CHODNOTA>
+    <TEXT>Teplice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40509</CHODNOTA>
+    <TEXT>Teplice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0427</CHODNOTA>
+    <TEXT>Ústí nad Labem</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40517</CHODNOTA>
+    <TEXT>Ústí nad Labem</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0511</CHODNOTA>
+    <TEXT>Česká Lípa</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40525</CHODNOTA>
+    <TEXT>Česká Lípa</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0512</CHODNOTA>
+    <TEXT>Jablonec nad Nisou</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40533</CHODNOTA>
+    <TEXT>Jablonec nad Nisou</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0513</CHODNOTA>
+    <TEXT>Liberec</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40541</CHODNOTA>
+    <TEXT>Liberec</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0514</CHODNOTA>
+    <TEXT>Semily</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40550</CHODNOTA>
+    <TEXT>Semily</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0521</CHODNOTA>
+    <TEXT>Hradec Králové</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40568</CHODNOTA>
+    <TEXT>Hradec Králové</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0522</CHODNOTA>
+    <TEXT>Jičín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40576</CHODNOTA>
+    <TEXT>Jičín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0523</CHODNOTA>
+    <TEXT>Náchod</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40584</CHODNOTA>
+    <TEXT>Náchod</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0524</CHODNOTA>
+    <TEXT>Rychnov nad Kněžnou</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40592</CHODNOTA>
+    <TEXT>Rychnov nad Kněžnou</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0525</CHODNOTA>
+    <TEXT>Trutnov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40606</CHODNOTA>
+    <TEXT>Trutnov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0531</CHODNOTA>
+    <TEXT>Chrudim</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40614</CHODNOTA>
+    <TEXT>Chrudim</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0532</CHODNOTA>
+    <TEXT>Pardubice</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40622</CHODNOTA>
+    <TEXT>Pardubice</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0533</CHODNOTA>
+    <TEXT>Svitavy</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40631</CHODNOTA>
+    <TEXT>Svitavy</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0534</CHODNOTA>
+    <TEXT>Ústí nad Orlicí</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40649</CHODNOTA>
+    <TEXT>Ústí nad Orlicí</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0631</CHODNOTA>
+    <TEXT>Havlíčkův Brod</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40657</CHODNOTA>
+    <TEXT>Havlíčkův Brod</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0632</CHODNOTA>
+    <TEXT>Jihlava</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40665</CHODNOTA>
+    <TEXT>Jihlava</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0633</CHODNOTA>
+    <TEXT>Pelhřimov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40673</CHODNOTA>
+    <TEXT>Pelhřimov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0634</CHODNOTA>
+    <TEXT>Třebíč</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40681</CHODNOTA>
+    <TEXT>Třebíč</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0635</CHODNOTA>
+    <TEXT>Žďár nad Sázavou</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40690</CHODNOTA>
+    <TEXT>Žďár nad Sázavou</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0641</CHODNOTA>
+    <TEXT>Blansko</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40703</CHODNOTA>
+    <TEXT>Blansko</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0642</CHODNOTA>
+    <TEXT>Brno-město</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40711</CHODNOTA>
+    <TEXT>Brno-město</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0643</CHODNOTA>
+    <TEXT>Brno-venkov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40720</CHODNOTA>
+    <TEXT>Brno-venkov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0644</CHODNOTA>
+    <TEXT>Břeclav</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40738</CHODNOTA>
+    <TEXT>Břeclav</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0645</CHODNOTA>
+    <TEXT>Hodonín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40746</CHODNOTA>
+    <TEXT>Hodonín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0646</CHODNOTA>
+    <TEXT>Vyškov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40754</CHODNOTA>
+    <TEXT>Vyškov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0647</CHODNOTA>
+    <TEXT>Znojmo</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40762</CHODNOTA>
+    <TEXT>Znojmo</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0711</CHODNOTA>
+    <TEXT>Jeseník</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40771</CHODNOTA>
+    <TEXT>Jeseník</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0712</CHODNOTA>
+    <TEXT>Olomouc</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40789</CHODNOTA>
+    <TEXT>Olomouc</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0713</CHODNOTA>
+    <TEXT>Prostějov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40797</CHODNOTA>
+    <TEXT>Prostějov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0714</CHODNOTA>
+    <TEXT>Přerov</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40801</CHODNOTA>
+    <TEXT>Přerov</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0715</CHODNOTA>
+    <TEXT>Šumperk</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40819</CHODNOTA>
+    <TEXT>Šumperk</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0721</CHODNOTA>
+    <TEXT>Kroměříž</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40827</CHODNOTA>
+    <TEXT>Kroměříž</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0722</CHODNOTA>
+    <TEXT>Uherské Hradiště</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40835</CHODNOTA>
+    <TEXT>Uherské Hradiště</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0723</CHODNOTA>
+    <TEXT>Vsetín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40843</CHODNOTA>
+    <TEXT>Vsetín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0724</CHODNOTA>
+    <TEXT>Zlín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40851</CHODNOTA>
+    <TEXT>Zlín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0801</CHODNOTA>
+    <TEXT>Bruntál</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40860</CHODNOTA>
+    <TEXT>Bruntál</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0802</CHODNOTA>
+    <TEXT>Frýdek-Místek</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40878</CHODNOTA>
+    <TEXT>Frýdek-Místek</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0803</CHODNOTA>
+    <TEXT>Karviná</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40886</CHODNOTA>
+    <TEXT>Karviná</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0804</CHODNOTA>
+    <TEXT>Nový Jičín</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40894</CHODNOTA>
+    <TEXT>Nový Jičín</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0805</CHODNOTA>
+    <TEXT>Opava</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40908</CHODNOTA>
+    <TEXT>Opava</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZ0806</CHODNOTA>
+    <TEXT>Ostrava-město</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40916</CHODNOTA>
+    <TEXT>Ostrava-město</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+  <POLOZKA>
+    <POLVAZ ref="1">
+    <CHODNOTA>CZZZZZ</CHODNOTA>
+    <TEXT>Extra-Regio</TEXT>
+    </POLVAZ>
+    <POLVAZ ref="2">
+    <CHODNOTA>40002</CHODNOTA>
+    <TEXT>Extra-Regio</TEXT>
+    </POLVAZ>
+  </POLOZKA>
+</DATA>
+</EXPORT>
+

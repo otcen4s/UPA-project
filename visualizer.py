@@ -5,6 +5,7 @@ from scraper_funcs import connect_to_db, create_and_switch_to_db
 
 
 from queries_task2 import task1
+from xkacur04_task2 import task2
 
 def main():
 
@@ -14,7 +15,8 @@ def main():
     create_and_switch_to_db(client, upa_proj_db)
 
 
-    task1(client)
+    #task1(client)
+    task2(client)
     
     
 
