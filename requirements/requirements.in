@@ -2,3 +2,4 @@ influxdb
 requests
 rfc3339
 seaborn
+matplotlib
