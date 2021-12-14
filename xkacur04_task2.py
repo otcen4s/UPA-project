@@ -5,7 +5,6 @@ from copy import deepcopy
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.linear_model import LinearRegression
 import numpy as np
 
 XML_PATH = './district_codes.xml'
