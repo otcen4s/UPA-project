@@ -235,6 +235,7 @@ def save_group_5_to_db(dbclient, urls):
 
     hosp_measurement = "group_5-osoby"
 
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
+    tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str), ("vek", int)]
+    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader, tags_columns=tags_columns)
     show_schema(kraj_okres_data_for_db)
     save_data_to_db(dbclient, kraj_okres_data_for_db)
