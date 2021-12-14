@@ -38,9 +38,14 @@ services:
   visualizer:
     build: .  # build Dockerfile
     container_name: visualizer
-    command: ["python", "visualizer.py"] # execute this command
+    user: "1000:1000" # $(id -u $USER):$(id -g $USER)
+    command: ["python3", "visualizer.py"] # execute this command
     environment:
       INFLUX_HOST: "influxdb"
       INFLUX_PORT: "8086"
       INFLUX_LOGIN: "upa21"
       INFLUX_PASSWORD: "upa21"
+      DISPLAY: ${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${LOCAL_PROJECT_DIR}:/app
