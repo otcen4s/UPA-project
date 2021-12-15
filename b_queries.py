@@ -44,7 +44,6 @@ def get_quartals(client):
 def per_capita(region, infected):
     return (infected / NUTS[region][0]) * 100
 
-
 def record_merge(quartal):
     record = {}
     quartal_list = []

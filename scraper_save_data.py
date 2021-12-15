@@ -230,6 +230,7 @@ def save_group_5_to_db(dbclient, urls):
 
     measurement = "group_5-osoby"
 
+
     unwanted_colums = ["nakaza_zeme_csu_kod", "reportovano_khs", "nakaza_v_zahranici"]
     tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str)]
     osoby_data_for_db = prepare_data_for_db(measurement, downloaded_data, unwanted_columnts=unwanted_colums, tags_columns=tags_columns, now=True)

@@ -1,6 +1,7 @@
 import csv
 import datetime
-
+import csv
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -180,3 +181,4 @@ def task_a_2(client):
     filename = "task_a_2.csv"
     task_a_2_save_csv(client, filename)
     task_a_2_plot_csv(filename)
+
