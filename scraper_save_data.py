@@ -29,7 +29,6 @@ def show_schema(data_for_db):
         print(f"tags: {tags}")
 
 
-
 def save_group_1_to_db(dbclient, urls):
     """Save group_1 to influx DB.
 
@@ -53,22 +52,22 @@ def save_group_1_to_db(dbclient, urls):
     print("===========================================" * 3)
     # hospitalizace
     # -------------
-    hosp_csv_reader = download_csv_data(urls["hospitalizace"])
+    downloaded_data = download_csv_data(urls["hospitalizace"])
 
-    hosp_measurement = "group_1-hospitalizace"
+    measurement = "group_1-hospitalizace"
 
     unwanted_columnts = ["id", "pacient_prvni_zaznam", "hfno", "upv", "ecmo", "tezky_upv_ecmo", "kum_pacient_prvni_zaznam"]
-    hosp_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader, unwanted_columnts)
+    hosp_data_for_db = prepare_data_for_db(measurement, downloaded_data, unwanted_columnts)
     show_schema(hosp_data_for_db)
     save_data_to_db(dbclient, hosp_data_for_db)
 
     # nakazeni-vyleceni-umrti-testy
     # -----------------------------
-    nakaz_csv_reader = download_csv_data(urls["nakazeni-vyleceni-umrti-testy"])
+    downloaded_data = download_csv_data(urls["nakazeni-vyleceni-umrti-testy"])
 
     nakaz_measurement = "group_1-nakazeni-vyleceni-umrti-testy"
 
-    nakaz_data_for_db = prepare_data_for_db(nakaz_measurement, nakaz_csv_reader)
+    nakaz_data_for_db = prepare_data_for_db(nakaz_measurement, downloaded_data)
     show_schema(nakaz_data_for_db)
     save_data_to_db(dbclient, nakaz_data_for_db)
 
@@ -96,13 +95,13 @@ def save_group_2_to_db(dbclient, urls):
 
     # kraj-okres-nakazeni-vyleceni-umrti
     # ----------------------------------
-    kraj_csv_reader = download_csv_data(urls["kraj-okres-nakazeni-vyleceni-umrti"])
+    downloaded_data = download_csv_data(urls["kraj-okres-nakazeni-vyleceni-umrti"])
 
-    hosp_measurement = "group_2-kraj-okres-nakazeni-vyleceni-umrti"
+    measurement = "group_2-kraj-okres-nakazeni-vyleceni-umrti"
 
     unwanted_columnts = ["id"]
     tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str)]
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, kraj_csv_reader, unwanted_columnts, tags_columns)
+    kraj_okres_data_for_db = prepare_data_for_db(measurement, downloaded_data, unwanted_columnts, tags_columns)
     show_schema(kraj_okres_data_for_db)
     save_data_to_db(dbclient, kraj_okres_data_for_db)
 
@@ -110,12 +109,12 @@ def save_group_2_to_db(dbclient, urls):
     # ----------------------------------
     obyv_csv_reader = download_csv_data(urls["obyvatelstvo"])
 
-    hosp_measurement = "group_2-obyvatelstvo"
+    measurement = "group_2-obyvatelstvo"
 
     unwanted_columnts = ["pohlavi_cis", "vek_cis", "vek_kod", "pohlavi_txt", "vek_txt", "vuzemi_txt", "casref_do"]
     tags_columns = [("vuzemi_cis", int), ("vuzemi_kod", int)]
     date_column = "idhod"
-    obyvatelstvo_data_for_db = prepare_data_for_db(hosp_measurement, obyv_csv_reader, unwanted_columnts, tags_columns, date_column)
+    obyvatelstvo_data_for_db = prepare_data_for_db(measurement, obyv_csv_reader, unwanted_columnts, tags_columns, date_column)
     show_schema(kraj_okres_data_for_db)
     save_data_to_db(dbclient, obyvatelstvo_data_for_db)
 
@@ -128,12 +127,12 @@ def save_group_3_to_db(dbclient, urls):
 
     Save `ockovani-umrti.csv`:
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    TODO
+    TODO description
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Save `ockovani-pozitivni`:
     -------------------------------------------------------------------------------------------------------------
-    TODO
+    TODO description
     -------------------------------------------------------------------------------------------------------------
 
     """
@@ -143,27 +142,27 @@ def save_group_3_to_db(dbclient, urls):
 
     # ockovani-umrti
     # ----------------------------------
-    umrti_csv_reader = download_csv_data(urls["ockovani-umrti"])
+    downloaded_data = download_csv_data(urls["ockovani-umrti"])
 
-    hosp_measurement = "group_3-ockovani-umrti"
+    measurement = "group_3-ockovani-umrti"
 
     unwanted_columnts = [
         "id", "zemreli_bez_ockovani_relativni_pocet", "zemreli_nedokoncene_ockovani_vek_prumer",
         "zemreli_dokoncene_ockovani_relativni_pocet", "zemreli_dokoncene_ockovani_vek_prumer", "zemreli_posilujici_davka_vek_prumer"
         ]
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, umrti_csv_reader, unwanted_columnts)
-    show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
+    umrti_data_for_db = prepare_data_for_db(measurement, downloaded_data, unwanted_columnts)
+    show_schema(umrti_data_for_db)
+    save_data_to_db(dbclient, umrti_data_for_db)
 
     # ockovani-pozitivni
     # ----------------------------------
-    hosp_csv_reader = download_csv_data(urls["ockovani-pozitivni"])
+    downloaded_data = download_csv_data(urls["ockovani-pozitivni"])
 
-    hosp_measurement = "group_3-ockovani-pozitivni"
+    measurement = "group_3-ockovani-pozitivni"
 
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
-    show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
+    pozitivni_data_for_db = prepare_data_for_db(measurement, downloaded_data)
+    show_schema(pozitivni_data_for_db)
+    save_data_to_db(dbclient, pozitivni_data_for_db)
 
 
 def save_group_4_to_db(dbclient, urls):
@@ -174,7 +173,7 @@ def save_group_4_to_db(dbclient, urls):
 
     Save `kraj-okres-testy.csv`:
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    TODO
+    TODO description
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     """
@@ -184,14 +183,14 @@ def save_group_4_to_db(dbclient, urls):
 
     # kraj-okres-testy
     # ----------------------------------
-    hosp_csv_reader = download_csv_data(urls["kraj-okres-testy"])
+    downloaded_data = download_csv_data(urls["kraj-okres-testy"])
 
-    hosp_measurement = "group_4-kraj-okres-testy"
+    measurement = "group_4-kraj-okres-testy"
 
     tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str)]
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader, tags_columns=tags_columns)
-    show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
+    testy_data_for_db = prepare_data_for_db(measurement, downloaded_data, tags_columns=tags_columns)
+    show_schema(testy_data_for_db)
+    save_data_to_db(dbclient, testy_data_for_db)
 
 
 def save_group_5_to_db(dbclient, urls):
@@ -202,12 +201,12 @@ def save_group_5_to_db(dbclient, urls):
 
     Save `ockovani.csv`:
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    TODO
+    TODO description
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Save `osoby.csv`:
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    TODO
+    TODO description
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     """
@@ -215,26 +214,25 @@ def save_group_5_to_db(dbclient, urls):
     print("Saving group_5 to influx database covid-19 ....")
     print("===========================================" * 3)
 
+    # ockovani
+    # ----------------------------------
+    downloaded_data = download_csv_data(urls["ockovani"])
+
+    measurement = "group_5-ockovani"
+
+    ockovani_data_for_db = prepare_data_for_db(measurement, downloaded_data)
+    show_schema(ockovani_data_for_db)
+    save_data_to_db(dbclient, ockovani_data_for_db)
+
     # osoby
     # ----------------------------------
-    hosp_csv_reader = download_csv_data(urls["ockovani"])
+    downloaded_data = download_csv_data(urls["osoby"])
 
-    # TODO: agregovanie
+    measurement = "group_5-osoby"
 
-    hosp_measurement = "group_5-ockovani"
-
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
-    show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
-
-    # osoby
-    # ----------------------------------
-    hosp_csv_reader = download_csv_data(urls["osoby"])
-
-    # TODO: agregovanie
-
-    hosp_measurement = "group_5-osoby"
-
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
-    show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
+    unwanted_colums = ["nakaza_zeme_csu_kod", "reportovano_khs", "nakaza_v_zahranici"]
+    tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str)]
+    osoby_data_for_db = prepare_data_for_db(measurement, downloaded_data, unwanted_columnts=unwanted_colums, tags_columns=tags_columns, now=True)
+    show_schema(osoby_data_for_db)
+    print(len(osoby_data_for_db))
+    save_data_to_db(dbclient, osoby_data_for_db)

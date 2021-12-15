@@ -11,8 +11,10 @@ def remove_unwanted_columns(record, unwanted_columns):
     return record
 
 
-def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_columns=None, date_column="datum"):
+def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_columns=None, date_column="datum", now=False):
     """Prepare downloaded csv file for saving to db. """
+    global_date = 1639526785000000000
+
     data_for_db = []
     csv_reader = csv.DictReader(csv_data.split("\n"))
     for record in csv_reader:
@@ -21,7 +23,7 @@ def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_column
         date = record.pop(date_column)
 
         if tags_columns:
-            tags = dict()
+            tags = {}
             for column in tags_columns:
                 tags.update({column[0]: column[1](record.pop(column[0]))})
 
@@ -32,9 +34,13 @@ def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_column
             except Exception:
                 record[k] = 0
 
+        if now:
+            global_date += 1
+            date = global_date
+
         data_for_db.append({
             "measurement": measurement,
-            "time": convert_date_to_rfc3339_format(date),
+            "time": global_date if now else convert_date_to_rfc3339_format(date),
             "fields": record
         })
 
