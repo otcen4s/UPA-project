@@ -52,3 +52,5 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ${LOCAL_PROJECT_DIR}:/app
+      - ${LOCAL_PROJECT_DIR}/plots:/app/plots
+      - ${LOCAL_PROJECT_DIR}/csvs:/app/csvs

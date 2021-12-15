@@ -62,7 +62,7 @@ def task_a_1_plot_csv(filename):
     plt.plot(dates, vylieceny, label="vylieceny")
     plt.legend(loc="best")
 
-    plt.savefig("task_a_1_1.jpg")
+    plt.savefig("plots/xkubik32/task_a_1_1.jpg")
     plt.show()
 
     plt.figure(figsize=(8, 8))
@@ -71,7 +71,7 @@ def task_a_1_plot_csv(filename):
     plt.plot(dates, testy, label="testy")
     plt.legend(loc="best")
 
-    plt.savefig("task_a_1_2.jpg")
+    plt.savefig("plots/xkubik32/task_a_1_2.jpg")
     plt.show()
 
     plt.figure(figsize=(8, 8))
@@ -80,7 +80,7 @@ def task_a_1_plot_csv(filename):
     plt.plot(dates, hospitalizovany, label="hospitalizovany")
     plt.legend(loc="best")
 
-    plt.savefig("task_a_1_3.jpg")
+    plt.savefig("plots/xkubik32/task_a_1_3.jpg")
     plt.show()
 
 
@@ -167,18 +167,18 @@ def task_a_2_plot_csv(filename):
     plt.ylabel("Pocet nakazenych")
     plt.title("Rozlozenie veku nakazenych v jednotlivych krajoch")
     plt.legend()
-    plt.savefig("task_a_2.jpg")
+    plt.savefig("plots/xkubik32/task_a_2.jpg")
     plt.show()
 
 
 def task_a_1(client):
-    filename = "task_a_1.csv"
+    filename = "csvs/xkubik32/task_a_1.csv"
     task_a_1_save_csv(client, filename)
     task_a_1_plot_csv(filename)
 
 
 def task_a_2(client):
-    filename = "task_a_2.csv"
+    filename = "csvs/xkubik32/task_a_2.csv"
     task_a_2_save_csv(client, filename)
     task_a_2_plot_csv(filename)
 
