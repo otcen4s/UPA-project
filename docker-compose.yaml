@@ -18,6 +18,8 @@ services:
       INFLUXDB_PASSWORD: "upa21"
       # disable limit for client data size in 1 saving request
       INFLUXDB_HTTP_MAX_BODY_SIZE: 0
+      INFLUXDB_DATA_MAX_SERIES_PER_DATABASE: 0
+      INFLUXDB_DATA_MAX_VALUES_PER_TAG: 0
     restart: always
 
   # UPA 1st task
