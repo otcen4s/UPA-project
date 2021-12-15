@@ -235,6 +235,9 @@ def save_group_5_to_db(dbclient, urls):
 
     hosp_measurement = "group_5-osoby"
 
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
+    unwanted_colums = ['nakaza_zeme_csu_kod', 'reportovano_khs', 'nakaza_v_zahranici']
+    tags_columns = [("kraj_nuts_kod", str), ("okres_lau_kod", str)]
+    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader, unwanted_columnts=unwanted_colums, tags_columns=tags_columns, now=True)
     show_schema(kraj_okres_data_for_db)
+    print(len(kraj_okres_data_for_db))
     save_data_to_db(dbclient, kraj_okres_data_for_db)
