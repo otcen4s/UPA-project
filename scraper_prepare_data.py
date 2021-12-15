@@ -10,6 +10,7 @@ def remove_unwanted_columns(record, unwanted_columns):
 
     return record
 
+
 def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_columns=None, date_column="datum", now=False):
     """Prepare downloaded csv file for saving to db. """
     global_date = 1639526785000000000
@@ -22,7 +23,7 @@ def prepare_data_for_db(measurement, csv_data, unwanted_columnts=[], tags_column
         date = record.pop(date_column)
 
         if tags_columns:
-            tags = dict()
+            tags = {}
             for column in tags_columns:
                 rec = record.pop(column[0])
                 try:
