@@ -46,7 +46,7 @@ def main():
 
     save_group_4_to_db(client, data_groups["group_4"])
 
-    # save_group_5_to_db(client, data_groups["group_5"])
+    save_group_5_to_db(client, data_groups["group_5"])
 
 
 if __name__ == "__main__":

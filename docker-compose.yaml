@@ -9,8 +9,9 @@ services:
     container_name: influxdb
     ports:
       - "8086:8086"
-    #volumes:
-      #- /opt/appdata/influxdb:/var/lib/influxdb
+    # local path for creating persistent db
+    volumes:
+      - /opt/appdata/influxdb:/var/lib/influxdb
     # setup credentials for user
     environment:
       INFLUXDB_HOSTNAME: "http://influxdb:8086"
@@ -18,6 +19,8 @@ services:
       INFLUXDB_PASSWORD: "upa21"
       # disable limit for client data size in 1 saving request
       INFLUXDB_HTTP_MAX_BODY_SIZE: 0
+      INFLUXDB_DATA_MAX_SERIES_PER_DATABASE: 0
+      INFLUXDB_DATA_MAX_VALUES_PER_TAG: 0
     restart: always
 
   # UPA 1st task
@@ -49,3 +52,5 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ${LOCAL_PROJECT_DIR}:/app
+      - ${LOCAL_PROJECT_DIR}/plots:/app/plots
+      - ${LOCAL_PROJECT_DIR}/csvs:/app/csvs
