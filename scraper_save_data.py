@@ -156,10 +156,15 @@ def save_group_3_to_db(dbclient, urls):
 
     # ockovani-pozitivni
     # ----------------------------------
-    downloaded_data = download_csv_data(urls["ockovani-pozitivni"])
+    downloaded_data = download_csv_data(urls["ockovani-hospitalizace"])
 
-    measurement = "group_3-ockovani-pozitivni"
+    measurement = "group_3-ockovani-hospitalizace"
 
+    unwanted_columnts = [
+        "id", "hospitalizovani_bez_ockovani_relativni_pocet", "hospitalizovani_nedokoncene_ockovani_relativni_pocet",
+        "hospitalizovani_nedokoncene_ockovani_vek_prumer", "hospitalizovani_dokoncene_ockovani_relativni_pocet", "hospitalizovani_dokoncene_ockovani_vek_prumer",
+        "hospitalizovani_posilujici_davka","hospitalizovani_posilujici_davka_relativni_pocet","hospitalizovani_posilujici_davka_vek_prumer"
+    ]
     pozitivni_data_for_db = prepare_data_for_db(measurement, downloaded_data)
     show_schema(pozitivni_data_for_db)
     save_data_to_db(dbclient, pozitivni_data_for_db)
