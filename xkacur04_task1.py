@@ -65,7 +65,9 @@ def task1(client):
 
 	district_data = load_district_data(XML_PATH)
 	for region, vaccinated in data_vaccinated.items():
-		residents = data_residents_regions[region]
+		residents = data_residents_regions.get(region)
+		if not region:
+			continue
 		ratio = vaccinated / residents
 		districts_region = list(filter(lambda x: region in x, district_data['codes'].keys()))
 		ratio_vaccinated_districts = {**ratio_vaccinated_districts, **{x: ratio for x in districts_region}}

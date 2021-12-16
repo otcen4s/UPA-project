@@ -2,8 +2,6 @@
 
 UPA BUT FIT project 2021/22
 
-TODO: project description
-
 ## Requirements
 - Docker engine
 - Docker compose
@@ -20,8 +18,13 @@ Then is necessary to run service for filling the database:
 
 ```docker-compose up scraper```
 
-For generating graphs from DB data is necessary to run (NOT IMPLEMENTED FOR NOW (2nd part of project))
-:
+Before generating of graphs is required to export:
+
+```LOCAL_PROJECT_DIR=PATH```
+where PATH is local path to downloaded repository.
+
+For generating graphs from DB data is necessary to run:
+
 
 ```docker-compose up visualizer```
 

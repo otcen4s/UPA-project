@@ -80,4 +80,4 @@ def task2(client):
 			ax.set_ybound((-0.02, 0.75))
 			plot = sns.lineplot(x='Dátum', y='Hodnota', ax=ax, hue='Hodnoty', data=df)
 
-	plt.savefig('xkacur04_task2.png', dpi=200)
+	plt.savefig('plots/xkacur04/xkacur04_task2.png', dpi=200)
