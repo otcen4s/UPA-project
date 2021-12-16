@@ -12,6 +12,5 @@ def main():
     task_a_1(client)
     task_a_2(client)
 
-
 if __name__ == "__main__":
     main()
