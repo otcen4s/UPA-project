@@ -114,7 +114,7 @@ def save_group_2_to_db(dbclient, urls):
     unwanted_columnts = ["pohlavi_cis", "vek_cis", "pohlavi_txt", "vek_txt", "vuzemi_txt"]
     tags_columns = [("vuzemi_kod", int), ("pohlavi_kod", str), ("vek_kod", str)]
     date_column = "casref_do"
-    obyvatelstvo_data_for_db = prepare_data_for_db(hosp_measurement, obyv_csv_reader, unwanted_columnts, tags_columns, date_column)
+    obyvatelstvo_data_for_db = prepare_data_for_db(measurement, obyv_csv_reader, unwanted_columnts, tags_columns, date_column)
     show_schema(kraj_okres_data_for_db)
     save_data_to_db(dbclient, obyvatelstvo_data_for_db)
 

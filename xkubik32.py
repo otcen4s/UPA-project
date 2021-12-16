@@ -63,7 +63,7 @@ def task_a_1_plot_csv(filename):
     plt.legend(loc="best")
 
     plt.savefig("plots/xkubik32/task_a_1_1.jpg")
-    plt.show()
+    # plt.show()
 
     plt.figure(figsize=(8, 8))
     plt.title("Vyvoj covidovej situacie po mesiacoch")
@@ -72,7 +72,7 @@ def task_a_1_plot_csv(filename):
     plt.legend(loc="best")
 
     plt.savefig("plots/xkubik32/task_a_1_2.jpg")
-    plt.show()
+    # plt.show()
 
     plt.figure(figsize=(8, 8))
     plt.title("Vyvoj covidovej situacie po mesiacoch")
@@ -81,7 +81,7 @@ def task_a_1_plot_csv(filename):
     plt.legend(loc="best")
 
     plt.savefig("plots/xkubik32/task_a_1_3.jpg")
-    plt.show()
+    # plt.show()
 
 
 NUTS = {
@@ -168,7 +168,7 @@ def task_a_2_plot_csv(filename):
     plt.title("Rozlozenie veku nakazenych v jednotlivych krajoch")
     plt.legend()
     plt.savefig("plots/xkubik32/task_a_2.jpg")
-    plt.show()
+    # plt.show()
 
 
 def task_a_1(client):
