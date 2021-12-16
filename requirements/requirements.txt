@@ -76,3 +76,9 @@ threadpoolctl==3.0.0
     # via scikit-learn
 urllib3==1.26.7
     # via requests
+
+pandas
+
+plotly
+
+kaleido

@@ -20,7 +20,7 @@ data_groups = {
     },
     "group_3": {
         "ockovani-umrti": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani-umrti.csv",
-        "ockovani-pozitivni": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani-pozitivni.csv",
+        "ockovani-hospitalizace": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani-hospitalizace.csv",
     },
     "group_4": {
         "kraj-okres-testy": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/kraj-okres-testy.csv",
