@@ -4,8 +4,11 @@ import xml.etree.ElementTree as ET
 from copy import deepcopy
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 import pandas as pd
 import numpy as np
+from datetime import datetime
+from matplotlib import dates
 
 XML_PATH = './district_codes.xml'
 
@@ -54,16 +57,27 @@ def task2(client):
 		ratio = np.array([0 if x['testy_na_obyvatela_7_dni'] == 0 else x['pozitivita_7_dni'] / x['testy_na_obyvatela_7_dni'] for x in data])
 		ratios.append((key, np.mean(ratio)))
 	ratios = sorted(ratios, key=lambda x: x[1])
-	fig, axes = plt.subplots(2, 3, figsize=(12, 8), dpi=200, sharey=True)
-	for i, x in enumerate(ratios[:3] + ratios[-3:]):
-		data = data_joined[x[0]]
-		time = [x['time'] for x in data]
-		pos = [x['pozitivita_7_dni'] for x in data]
-		tests = [x['testy_na_obyvatela_7_dni']*100 for x in data]
-		df = pd.DataFrame({'time': time, 'positivity': pos, 'tests': tests})
-		df = pd.melt(df, 'time', var_name='Measure', value_name='Value')
-		plot = sns.lineplot('time', 'Value', ax=axes[i//3, i%3], hue='Measure', data=df)
-		plot.set(xticklabels=[], xticks=[])
-		axes[i//3, i%3].set_title(district_data['names'][x[0]])
+
+	fig = plt.figure(dpi=200, figsize=(18, 12))
+	subfigs = fig.subfigures(nrows=2, ncols=1)
+	titles = ['Najlepšie okresy', 'Najhoršie okresy']
+	districts_plot = [x[0] for x in ratios[:3] + ratios[-3:]]
+	for i, subfig in enumerate(subfigs):
+		subfig.suptitle(titles[i], fontsize=18)		
+		axes = subfig.subplots(nrows=1, ncols=3, sharey=True)
+		for j, ax in enumerate(axes):
+			dist_code = districts_plot[i*3 + j]
+			data = data_joined[dist_code]
+			time = [datetime.strptime(x['time'].split('T')[0], '%Y-%m-%d').date() for x in data]
+			pos = [x['pozitivita_7_dni'] for x in data]
+			tests = [x['testy_na_obyvatela_7_dni']*100 for x in data]
+			df = pd.DataFrame({'Dátum': time, 'Pozitivita': pos, 'Testy na obyv. * 100': tests})
+			df = pd.melt(df, 'Dátum', var_name='Hodnoty', value_name='Hodnota')
+
+			ax.set_title(district_data['names'][dist_code])
+			ax.xaxis.set_major_formatter(dates.DateFormatter('%Y-%m-%d'))
+			ax.xaxis.set_major_locator(dates.DayLocator(interval=150))
+			ax.set_ybound((-0.02, 0.75))
+			plot = sns.lineplot(x='Dátum', y='Hodnota', ax=ax, hue='Hodnoty', data=df)
 
 	plt.savefig('xkacur04_task2.png', dpi=200)

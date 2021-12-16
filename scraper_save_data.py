@@ -222,11 +222,11 @@ def save_group_5_to_db(dbclient, urls):
     # TODO: agregovanie
 
     hosp_measurement = "group_5-ockovani"
-
-    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
+    tags_columns = [("kraj_nuts_kod", str), ("vekova_skupina", str), ("vakcina", str)]
+    kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader, tags_columns=tags_columns)
     show_schema(kraj_okres_data_for_db)
     save_data_to_db(dbclient, kraj_okres_data_for_db)
-
+    """
     # osoby
     # ----------------------------------
     hosp_csv_reader = download_csv_data(urls["osoby"])
@@ -237,4 +237,4 @@ def save_group_5_to_db(dbclient, urls):
 
     kraj_okres_data_for_db = prepare_data_for_db(hosp_measurement, hosp_csv_reader)
     show_schema(kraj_okres_data_for_db)
-    save_data_to_db(dbclient, kraj_okres_data_for_db)
+    save_data_to_db(dbclient, kraj_okres_data_for_db)"""
